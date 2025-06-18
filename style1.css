@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #a5d6f9, #d1c4e9);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #242121;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8em;
+    color: #0b5394;
+    text-shadow: 2px 2px #fff;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.card {
+    flex: 1;
+    height: 250px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.5s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.236);
+    cursor: pointer;
+    filter: brightness(0.85);
+    min-width: 120px;
+    max-width: 400px;
+}
+
+.card:hover {
+    flex: 3;
+    filter: brightness(1.05);
+    z-index: 2;
+}
+
+
+.frases {
+    margin-top: 20px;
+    background-color: #ffffffaa;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin-inline: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.frases h2 {
+    color: #2d3d8ce2;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.frases ul {
+    list-style: none;
+}
+
+.frases li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 1em;
+    color: #66666697;
+}
+
+
+@media (max-width: 720px) {
+  .container {
+    display:block;
+    width: 100%;   
+    padding: 10px;
+  }
+
+  div{
+        margin: 0 auto;
+  }
+
+  .card {
+    padding-bottom: 10px; 
+    height: 200px;
+    width: 100%;
+    filter: brightness(0.75);
+    z-index: 0;
+    margin-bottom: 15px;
+    transition: all 0.5s ease;
+  }
+
+  .card:hover{
+    flex: 3;
+    filter: brightness(1.05);
+    z-index: 2;
+  }
+
+
+}
+
